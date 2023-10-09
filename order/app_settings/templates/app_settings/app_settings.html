@@ -1,0 +1,32 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'app_settings/app_settings.css' %}">
+    <link rel="stylesheet" href="{% static 'app_settings/img/basket.png' %}">
+    {% block links %}
+        
+    {% endblock %}
+</head>
+<body>
+    <header>
+        <nav id="header">
+            <a href="{% url 'main' %}">Головна сторiнка</a>
+            <a href="{% url 'contact' %}">Контакти</a>
+            <a href="{% url 'shopping' %}" id="basket"><img src="{% static 'app_settings/img/basket.png' %}" alt=""></a>
+            <a href="{% url 'product' %}">Товари</a>
+        </nav>
+        </header>
+    <main>
+        {% block content %}
+
+        {% endblock %}
+    </main>
+    <footer>
+        <p>Створено за пiдтримки <a href="https://www.worldit.academy/" target="_blank">WorldItAcademy</a></p>
+    </footer>
+</body>
+</html>

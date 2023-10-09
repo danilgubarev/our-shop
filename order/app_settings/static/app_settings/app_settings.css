@@ -1,0 +1,30 @@
+#header {
+    position: fixed;
+    display: inline-block;
+    width: 100%;
+    z-index: 10;
+    text-align: center;
+    top: -10px;
+    left: 0px;
+    background-color: rgb(95, 95, 95);
+    padding: 30px 0px;
+    
+    
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+    margin-right: 60px;
+    font-size: 20px;
+}
+
+h1 {
+    margin-top: 150px;
+    text-align: center;
+}
+
+#basket {
+    position: absolute;
+    right: 20px;
+}
