@@ -1,0 +1,128 @@
+h2 {
+    position: relative; /* Устанавливаем позицию относительно исходной позиции */
+    top: 50px; /* Сдвигаем элемент вниз на 50 пикселей */
+}
+
+#about-us {
+    position: absolute; /* Устанавливаем абсолютную позицию элемента */
+}
+
+#about-us h2 {
+    -webkit-text-stroke: 0.5px black;
+    background: linear-gradient(to right, #ff8177 0%, #ff867a 0%, #ff8c7f 21%, #f99185 52%, #cf556c 78%, #b12a5b 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 25px;
+}
+
+/* Устанавливаем элемент .slider-wrapper как контейнер сетки */
+.slider-wrapper .image-list {
+    display: grid; /* Устанавливаем элемент как контейнер сетки */
+    gap: 18px; /* Устанавливаем промежуток между элементами сетки */
+    font-size: 0; /* Устанавливаем размер шрифта 0, чтобы убрать пробелы */
+    margin-bottom: 30px; /* Устанавливаем отступ снизу */
+    overflow-x: auto; /* Разрешаем горизонтальную прокрутку, если необходимо */
+    scrollbar-width: none; /* Убираем стандартный вид скроллбара в Firefox */
+    grid-template-columns: repeat(10, 1fr); /* Задаем сетку с 10 колонками равной ширины */
+    margin-top: 300px; /* Устанавливаем отступ сверху в 300 пикселей */
+}
+
+.slider-wrapper .image-list::-webkit-scrollbar {
+    display: none; /* Скрываем скроллбар в Chrome и Safari */
+}
+
+body {
+    display: flex; /* Устанавливаем flex-контейнер для body */
+    align-items: center; /* Выравниваем элементы по вертикали */
+    justify-content: center; /* Выравниваем элементы по горизонтали */
+    min-height: 100vh; /* Устанавливаем минимальную высоту во всю высоту видимой области */
+}
+
+.slider-wrapper .image-list .image-item {
+    width: 325px; /* Устанавливаем ширину элемента */
+    height: 500px; /* Устанавливаем высоту элемента */
+    object-fit: cover; /* Растягиваем изображение, чтобы оно полностью заполнило элемент без искажений */
+}
+
+.container {
+    max-width: 1390px; /* Устанавливаем максимальную ширину контейнера */
+    width: 95%; /* Устанавливаем ширину в 95% от родительского элемента */
+}
+
+.slider-wrapper {
+    position: relative; /* Устанавливаем позицию относительно исходной позиции */
+}
+
+.slider-wrapper .slide-button {
+    position: absolute; /* Устанавливаем абсолютную позицию элемента */
+    top: 50%; /* Выравниваем по вертикали на 50% высоты родителя */
+    outline: none; /* Убираем контур фокусировки */
+    border: none; /* Убираем границы */
+    height: 50px; /* Устанавливаем высоту */
+    width: 50px; /* Устанавливаем ширину */
+    z-index: 5; /* Задаем z-индекс для управления позицией над другими элементами */
+    color: #fff; /* Задаем цвет текста */
+    display: flex; /* Устанавливаем элемент как flex-контейнер */
+    cursor: pointer; /* Устанавливаем курсор "указатель" */
+    font-size: 2.2rem; /* Устанавливаем размер шрифта */
+    background: #000; /* Устанавливаем фон */
+    align-items: center; /* Выравниваем элементы по вертикали */
+    justify-content: center; /* Выравниваем элементы по горизонтали */
+    border-radius: 50%; /* Создаем круглый элемент */
+    transform: translateY(-50%); /* Сдвигаем элемент наверх на 50% своей высоты */
+}
+
+.slider-wrapper .slide-button:hover {
+    background: #444; /* Изменяем фон при наведении курсора */
+}
+
+.slider-wrapper .slide-button#prev-slide {
+    left: -20px; /* Устанавливаем отрицательное смещение слева */
+}
+
+.slider-wrapper .slide-button#next-slide {
+    right: -20px; /* Устанавливаем отрицательное смещение справа */
+}
+
+.container .slider-scrollbar {
+    height: 24px; /* Устанавливаем высоту элемента полосы прокрутки */
+    width: 100%; /* Устанавливаем ширину 100% */
+    display: flex; /* Устанавливаем элемент как flex-контейнер */
+    align-items: center; /* Выравниваем элементы по вертикали */
+}
+
+.slider-scrollbar .scrollbar-track {
+    height: 2px; /* Устанавливаем высоту полосы прокрутки */
+    width: 100%; /* Устанавливаем ширину 100% */
+    background: #ccc; /* Задаем цвет фона */
+    position: relative; /* Устанавливаем позицию относительно исходной позиции */
+    border-radius: 4px; /* Создаем закругленные углы */
+}
+
+.slider-scrollbar:hover .scrollbar-track {
+    height: 4px; /* Изменяем высоту полосы прокрутки при наведении */
+}
+
+.slider-scrollbar .scrollbar-thumb {
+    position: absolute; /* Устанавливаем абсолютную позицию элемента */
+    height: 100%; /* Устанавливаем высоту элемента */
+    width: 50%; /* Устанавливаем ширину элемента */
+    background: #000000; /* Задаем цвет фона элемента */
+    border-radius: inherit; /* Наследуем закругленные углы от родителя */
+    cursor: grab; /* Задаем курсор "захват" */
+}
+
+.slider-scrollbar:hover .scrollbar-thumb:active {
+    cursor: grabbing; /* Изменяем курсор при активном "захвате" */
+    height: 8px; /* Изменяем высоту элемента */
+    top: -2px; /* Смещаем элемент вверх на 2 пикселя */
+}
+
+.slider-scrollbar .scrollbar-thumb::after {
+    content: ""; /* Добавляем псевдоэлемент */
+    position: absolute; /* Устанавливаем абсолютную позицию элемента */
+    left: 0; /* Устанавливаем отступ слева */
+    right: 0; /* Устанавливаем отступ справа */
+    top: -10px; /* Смещаем элемент вверх на 10 пикселей */
+    bottom: -10px; /* Смещаем элемент вниз на 10 пикселей */
+}

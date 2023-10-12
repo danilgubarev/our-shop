@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="{% static 'app_settings/img/shopping_cart.png' %}">
     <link rel="stylesheet" href="{% static 'app_settings/app_settings.css' %}">
-    <link rel="stylesheet" href="{% static 'app_settings/img/basket.png' %}">
     {% block links %}
         
     {% endblock %}
@@ -14,10 +14,13 @@
 <body>
     <header>
         <nav id="header">
-            <a href="{% url 'main' %}">Головна сторiнка</a>
-            <a href="{% url 'contact' %}">Контакти</a>
-            <a href="{% url 'shopping' %}" id="basket"><img src="{% static 'app_settings/img/basket.png' %}" alt=""></a>
-            <a href="{% url 'product' %}">Товари</a>
+            <a href="{% url 'registration' %}" class="authorize">Зареєструватися</a>
+            <a href="{% url 'authorization' %}" class="authorize">Увійти</a>
+            <a href="{% url 'main' %}" class='link'>Головна сторiнка</a>
+            <a href="{% url 'contact' %}" class='link'>Контакти</a>
+            <a href="{% url 'shopping' %}" id="basket"><img src="{% static 'app_settings/img/basket.png' %}" width="60px" height="60px" alt=""></a>
+            <a href="{% url 'product' %}" class='link'>Товари</a>
+            <a href="{% url 'main' %}" id="logo"><img src="{% static 'app_settings/img/logo2.png' %}" width="60px" height="60px" alt=""></a>
         </nav>
         </header>
     <main>
@@ -25,7 +28,7 @@
 
         {% endblock %}
     </main>
-    <footer>
+    <footer id="footer">
         <p>Створено за пiдтримки <a href="https://www.worldit.academy/" target="_blank">WorldItAcademy</a></p>
     </footer>
 </body>

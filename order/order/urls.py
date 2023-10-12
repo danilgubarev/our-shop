@@ -23,8 +23,8 @@ from shopping_cart_page.views import shopping_cart_page
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('#', views.registration_page),
-    path('authorization/', views.authorization_page),
+    path('registration', views.registration_page, name='registration'),
+    path('authorization/', views.authorization_page, name='authorization'),
     path('', main_page, name='main'),
     path('contact_page/', contact_page, name='contact'),
     path('product_page/', product_page, name='product'),
