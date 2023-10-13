@@ -8,37 +8,48 @@ h1{
 }
 
 #text{
-    display: block;
+    /* display: block; */
+    
     margin-left: 500px;
     margin-right: 500px;
     font-size: 30px;
-    background-color: #ffcc99;
+    background-color: #3F4E5D;
+    color: #ff8000;
     border-radius: 24px 24px;
     padding: 50px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 1000px;
+    text-align: center;
+    margin: 0 auto;
 }
 
 .txt{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     padding: 20px;
+    
 }
 
 #us{
-    font-size: 30px;
+    font-size: 40px;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #ff8000;
+    -webkit-text-stroke: 1px black;
 }
 
 #contact{
     columns: 100px 2;
     column-gap: 30px;
     padding: 20px;
-    background-color:  #ffcc99;
+    background-color: #3F4E5D;
     border-radius: 24px 24px;
-    font-size: 25px;
+    font-size: 30px;
     margin-left: 500px;
     margin-right: 500px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    width: 1000px;
+    margin: 0 auto;
 }
-body{
-    background-color: #ffffcc;
+
+#contact p{
+    color: #ff8000;
 }

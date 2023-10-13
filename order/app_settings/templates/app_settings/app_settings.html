@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="{% static 'app_settings/img/shopping_cart.png' %}">
+    <!-- <link rel="stylesheet" href="{% static 'app_settings/img/shopping_cart.png' %}"> -->
     <link rel="stylesheet" href="{% static 'app_settings/app_settings.css' %}">
     {% block links %}
         
@@ -21,6 +21,7 @@
             <a href="{% url 'shopping' %}" id="basket"><img src="{% static 'app_settings/img/basket.png' %}" width="60px" height="60px" alt=""></a>
             <a href="{% url 'product' %}" class='link'>Товари</a>
             <a href="{% url 'main' %}" id="logo"><img src="{% static 'app_settings/img/logo2.png' %}" width="60px" height="60px" alt=""></a>
+            
         </nav>
         </header>
     <main>
