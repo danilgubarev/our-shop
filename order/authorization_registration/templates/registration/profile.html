@@ -1,0 +1,19 @@
+{% extends 'app_settings/app_settings.html' %}
+{% load static %}
+
+{% block links %}
+<link rel="stylesheet" href="{% static 'profile.css' %}">
+{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="cover-photo">
+      <img src="https://img.freepik.com/premium-vector/man-avatar-profile-picture-vector-illustration_268834-538.jpg" class="profile">
+    </div>
+    <div class="profile-name">{{user.username}}</div>
+    <p class="about">User Interface Designer and<br>front-end developer</p>
+    <button class="msg-btn">Message</button>
+    <button class="follow-btn" onclick="location.href='{% url 'logout' %}?next=/profile/'">Logout</button>
+
+  </div>
+{% endblock %}
