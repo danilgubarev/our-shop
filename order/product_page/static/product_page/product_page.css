@@ -1,9 +1,18 @@
 .product_page{
     display: flex;
 }
+
+/* #last { */
+    /* position: absolute; */
+    /* bottom: 1px; */
+    /* left: 10px; */
+    /* width: 450px */
+    
+/* } */
+
 .product {
     margin-top: 50px;
-    background-color: #3F4E5D;
+    background-color: #141414;
     width: 300px;
     border: 8px;
     border-radius: 15px;
@@ -12,14 +21,20 @@
     /* display: flex; */
     flex-grow: 1;
     /* justify-content: center; */
+    text-align: center;
 }
 
 h2 {
+    font-family: "Bebas_Neue variant0", Tofu;
     text-align: center;
-    color: #ff8000;
+    color: #fff;
     bottom: 50px;
 }
 
 p {
     text-align: center;
+}
+
+img {
+    border-radius: 5px;
 }

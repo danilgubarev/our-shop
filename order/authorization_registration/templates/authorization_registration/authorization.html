@@ -2,10 +2,33 @@
 {% load static %}
 
 {% block links %}
-
+<link rel="stylesheet" href="{% static 'authorization_registration/authorization.css' %}">
 {% endblock %}
 
 
 {% block content %}
-    <h1>Авторизація</h1>
+    <h1>Реєстрація</h1>
+    <div class="autorization" >
+        <div class="input">
+            <h3>Login:</h3>
+            <input type="text">
+        </div>
+<!--  -->
+        <div class="input">
+            <h3>Password:</h3>
+            <input type="number">
+        </div>
+<!--  -->
+        <div class="input">
+            <h3>Email:</h3>
+            <input type="email">
+        </div>
+<!--  -->
+        <div class="input">
+            <h3>Phone number:</h3>
+            <input type="number">
+        </div>
+
+        <button>Submit</button>
+    </div>
 {% endblock %}

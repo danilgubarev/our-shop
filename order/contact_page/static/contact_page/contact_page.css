@@ -13,8 +13,8 @@ h1{
     margin-left: 500px;
     margin-right: 500px;
     font-size: 30px;
-    background-color: #3F4E5D;
-    color: #ff8000;
+    background-color: #141414;
+    color: #fff;
     border-radius: 24px 24px;
     padding: 50px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -26,13 +26,13 @@ h1{
 .txt{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     padding: 20px;
-    
+    font-family: Comic Sans MS, Comic Sans, cursive;
 }
 
 #us{
     font-size: 40px;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    color: #ff8000;
+    color: #ff7700;
     -webkit-text-stroke: 1px black;
 }
 
@@ -40,7 +40,7 @@ h1{
     columns: 100px 2;
     column-gap: 30px;
     padding: 20px;
-    background-color: #3F4E5D;
+    background-color: #141414;
     border-radius: 24px 24px;
     font-size: 30px;
     margin-left: 500px;
@@ -51,5 +51,6 @@ h1{
 }
 
 #contact p{
-    color: #ff8000;
+    color: #fff;
+    font-family: Comic Sans MS, Comic Sans, cursive;
 }

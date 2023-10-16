@@ -1,10 +1,11 @@
 body {
-    margin: 0;
-    padding: 0;
-    background-image: url(https://cdn.mos.cms.futurecdn.net/wXYTTkzuHmLfs4JDSEQRwP.gif);
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center center;
+    background-color: black;
+    /* margin: 0; */
+    /* padding: 0; */
+    /* background-image: url(https://cdn.mos.cms.futurecdn.net/wXYTTkzuHmLfs4JDSEQRwP.gif); */
+    /* background-size: cover; */
+    /* background-attachment: fixed; */
+    /* background-position: center center; */
 }
 
 .authorize {
@@ -34,7 +35,7 @@ body {
     text-align: center;
     top: -10px;
     left: 0px;
-    background-color: rgb(32, 45, 66);
+    background-color: #141414;
     padding: 30px 0px;
     overflow: hidden; 
 }
@@ -56,7 +57,7 @@ h1 {
     position: absolute;
     left: 10px;
     top: 15px;
-    filter: drop-shadow(0px 0px 10px rgb(80, 246, 255));
+    /* filter: drop-shadow(0px 0px 4px rgb(255, 255, 255)); */
     
 
 }
@@ -120,7 +121,7 @@ p {
 }
 
 #footer {
-    background-color: rgb(32, 45, 66);
+    background-color: #141414;
     font-size: 30px;
     position: absolute;
     bottom: -1000px;

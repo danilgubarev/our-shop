@@ -1,0 +1,51 @@
+.autorization {
+    /* display: flex; */
+    background-color: #141414;
+    border-radius: 7px;
+    width: 500px;
+    height: 500px;
+    margin: 0 auto;
+    
+   
+    
+}
+
+/* .autorization .input { */
+    /* display: flex; */
+    /* align-items: center; */
+/* } */
+
+.autorization .input input {
+    width: 300px;
+    height: 30px;
+    border-radius: 10px;
+    margin-left: 30px;
+    border: 3px solid white;
+    
+    background-color:#141414;
+    color: white;
+
+}
+
+.autorization .input h3{
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.autorization button {
+    color: black;
+    width: 300px;
+    height: 40px;
+    border-radius: 10px;
+    margin-left: 100px;
+    margin-top: 30px;
+    border: 3px solid black ;
+    transform: background-color,color,border 3s;
+}
+
+.autorization button:hover{
+    background-color: black;
+    color: white;
+    border: 3px solid white ;
+}
+
+ /*  */
