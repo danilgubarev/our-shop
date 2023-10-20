@@ -21,7 +21,7 @@ class BuyerManager(BaseUserManager):
 
 class Buyer(AbstractBaseUser, PermissionsMixin):
     username = models.TextField(unique=True)
-    email = models.EmailField(unique=True, default='example@example.com')
-    password = models.CharField(max_length=100, unique=True, default='12345678')
+    email = models.EmailField()
+    password = models.CharField(max_length=100, unique=True)
     objects = BuyerManager()
     USERNAME_FIELD = 'username'

@@ -27,7 +27,7 @@ h2 {
     margin-bottom: 30px; /* Устанавливаем отступ снизу */
     overflow-x: auto; /* Разрешаем горизонтальную прокрутку, если необходимо */
     scrollbar-width: none; /* Убираем стандартный вид скроллбара в Firefox */
-    grid-template-columns: repeat(10, 1fr); /* Задаем сетку с 10 колонками равной ширины */
+    grid-template-columns: repeat(16, 1fr); /* Задаем сетку с 10 колонками равной ширины */
     margin-top: 300px; /* Устанавливаем отступ сверху в 300 пикселей */
 }
 
@@ -77,7 +77,7 @@ body {
 }
 
 .slider-wrapper .slide-button:hover {
-    background: #444; /* Изменяем фон при наведении курсора */
+    background: #ffff00; /* Изменяем фон при наведении курсора */
 }
 
 .slider-wrapper .slide-button#prev-slide {

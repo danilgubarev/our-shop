@@ -11,9 +11,10 @@
       <img src="https://img.freepik.com/premium-vector/man-avatar-profile-picture-vector-illustration_268834-538.jpg" class="profile">
     </div>
     <div class="profile-name">{{user.username}}</div>
-    <p class="about">User Interface Designer and<br>front-end developer</p>
-    <button class="msg-btn">Message</button>
-    <button class="follow-btn" onclick="location.href='{% url 'logout' %}?next=/profile/'">Logout</button>
+    <p class="about">Ласкаво просимо до вашого особистого профілю! <br> Дізнайтесь більше про нас, перейшовши на головну сторінку.<br>Для цього натиснiть кнопку нижче</p>
+    <button class="msg-btn" onclick="location.href='{% url 'main' %}'">Головна сторiнка</button>
+    <button class="follow-btn" onclick="location.href='{% url 'logout' %}?next=/profile/'">Вийти</button>
+
 
   </div>
 {% endblock %}
