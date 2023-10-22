@@ -2,6 +2,7 @@ body {
     background: #000;
 }
 
+
 .authorize {
     display: inline-block;
     position: relative;
@@ -42,7 +43,6 @@ h1 {
     text-align: center; 
     -webkit-text-stroke: 1px black;
     background: linear-gradient(to right, #fa709a 0%, #fee140 100%);
-    
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-size: 40px;
@@ -53,7 +53,7 @@ h1 {
     position: absolute;
     left: 10px;
     top: 15px;
-    filter: drop-shadow(0px 0px 10px rgb(255, 255, 255));
+    filter: drop-shadow(0px 0px 7.5px rgb(255, 255, 255));
     
 
 }
