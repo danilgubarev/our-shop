@@ -3,47 +3,251 @@
 
 {% block links %}
     <link rel="stylesheet" href="{% static 'product_page/product_page.css' %}">
-
 {% endblock %}
 
 
 {% block content %}
     <h1>Сторінка товарів</h1>
-    <div class="product_page">
-        
-        
-        <div class="product">
+    <h2>Apple Iphone</h2>
+    <div class="card-grid">
+        <div class="card">
+            
             <p>
-                <img height="250px" width="300px" src="{% static 'product_page/img/macbook1.webp' %}" alt="img">
+                <img src="{% static 'product_page/img/iphone15promax.jpg.webp' %}" alt="">
             </p>
-            <h2 class="image-list">MacBook Air - 1500 USD</h2>
+            <h3>Iphone 15 Pro Max</h3>\
+            <hr>
+        <div class="button-wrap">
+            <h3>67 194 грн</h3>
+            <a href="{% url 'shopping' %}" class="button">Додати в корзину</a>
         </div>
-        
-        <div class="product">
+        </div>
+
+        <div class="card">
             <p>
-                <img height="250px" width="300px" src="{% static 'product_page/img/iphone1.webp' %}" alt="img">
+                <img src="{% static 'product_page/img/iphone14promax.jpg.webp' %}" alt="">
             </p>
-            <h2 class="image-list">IPhone 14 - 1000 USD</h2>
+            <h3>Iphone 14 Pro Max</h3>\
+            <hr>
+            <div class="button-wrap">
+                <h3>45 599 грнн</h3>
+                <a href="{% url 'shopping' %}" class="button">Додати в корзину</a>
+            </div>
+            
         </div>
-        
-        <div class="product">
+
+        <div class="card">
             <p>
-                <img height="250px" width="300px" src="{% static 'product_page/img/airpods2.webp' %}" alt="img">
+                <img src="{% static 'product_page/img/iphone13.jpg.webp' %}" alt="">
             </p>
-            <h2 class="image-list">Airpods - 300 USD</h2>
+            <h3>Iphone 13</h3>\
+            <hr>
+            <div class="button-wrap">
+                <h3>26 799 грн</h3>
+                <a href="{% url 'shopping' %}" class="button">Додати в корзину</a>
+            </div>
+            
         </div>
-        
-        <div class="product">
+
+        <div class="card">
             <p>
-                <img height="250px" width="300px" src="{% static 'product_page/img/airpods1.webp' %}" alt="img">
+                <img src="{% static 'product_page/img/iphone14.jpg.webp' %}" alt="">
             </p>
-            <h2 class="image-list">Aipods - 300 USD</h2>
+            <h3>Iphone 14</h3>\
+            <hr>
+            <div class="button-wrap">
+                <h3>30 599 грн</h3>
+                <a href="{% url 'shopping' %}" class="button">Додати в корзину</a>
+            </div>
+            
         </div>
-        
-        <div class="product" id="last">
+
+        <div class="card">
             <p>
-                <img height="250px" width="300px" src="{% static 'product_page/img/macbook2.webp' %}" alt="img">
+                <img src="{% static 'product_page/img/iphone11.jpg.webp' %}" alt="">
             </p>
-            <h2 class="image-list">MacBook2 - 1000 USD</h2>
+            <h3>Iphone 11</h3>\
+            <hr>
+            <div class="button-wrap">
+                <h3>21 299 грн</h3>
+                <a href="{% url 'shopping' %}" class="button">Додати в корзину</a>
+            </div>
+            
         </div>
+
+        <div class="card">
+            <p>
+                <img src="{% static 'product_page/img/iphone12.jpg.webp' %}" alt="">
+            </p>
+            <h3>Iphone 12</h3>\
+            <hr>
+            <div class="button-wrap">
+                <h3>25 717 грн</h3>
+                <a href="{% url 'shopping' %}" class="button">Додати в корзину</a>
+            </div>
+            
+        </div>
+    </div>
+    <h2>Apple Ipad</h2>
+    <div class="card-grid">
+        <div class="card">
+            <p>
+                <img src="{% static 'product_page/img/ipad1.jpg.webp' %}" alt="">
+            </p>
+            <h3>Ipad 10.2 64GB</h3>\
+            <hr>
+            <div class="button-wrap">
+                <h3>13 699 грн</h3>
+                <a href="{% url 'shopping' %}" class="button">Додати в корзину</a>
+            </div>
+            
+        </div>
+                
+        <div class="card">
+            <p>
+                <img src="{% static 'product_page/img/ipad_air.jpg.webp' %}" alt="">
+            </p>
+            <h3>Ipad Air 256GB</h3>\
+            <hr>
+            
+            <div class="button-wrap">
+                <h3>27 599 грн</h3>
+                <a href="{% url 'shopping' %}" class="button">Додати в корзину</a>
+            </div>
+        </div>
+                
+        <div class="card">
+            <p>
+                <img src="{% static 'product_page/img/ipad_pro.jpg.webp' %}" alt="">
+            </p>
+            <h3>Ipad Pro 128 GB</h3>\
+            <hr>
+            
+            <div class="button-wrap">
+                <h3>37 199 грн</h3>
+                <a href="{% url 'shopping' %}" class="button">Додати в корзину</a>
+            </div>
+        </div>
+                
+        <div class="card">
+            <p>
+                <img src="{% static 'product_page/img/ipad2.jpg.webp' %}" alt="">
+            </p>
+            <h3>Ipad 10.9 64GB</h3>\
+            <hr>
+           
+            <div class="button-wrap">
+                <h3>21 799 грн</h3>
+                <a href="{% url 'shopping' %}" class="button">Додати в корзину</a>
+            </div>
+        </div>
+                
+        <div class="card">
+            <p>
+                <img src="{% static 'product_page/img/ipad3.jpg.webp' %}" alt="">
+            </p>
+            <h3>Ipad 10.9 256GB</h3>\
+            <hr>
+            
+            <div class="button-wrap">
+                <h3>29 499 грн</h3>
+                <a href="{% url 'shopping' %}" class="button">Додати в корзину</a>
+            </div>
+        </div>
+                
+        <div class="card">
+            <p>
+                <img src="{% static 'product_page/img/ipad_pro2.jpg.webp' %}" alt="">
+            </p>
+            <h3>Ipad Pro 2TB</h3>\
+            <hr>
+            
+            <div class="button-wrap">
+                <h3>78 067 грн</h3>
+                <a href="{% url 'shopping' %}" class="button">Додати в корзину</a>
+            </div>
+        </div>
+    </div> 
+    <h2>Apple MacBook</h2>
+    <div class="card-grid"> 
+        <div class="card">
+            <p>
+                <img src="{% static 'product_page/img/macbook_air13.jpg.webp' %}" alt="">
+            </p>
+            <h3>MacBook Air 13 256GB</h3>\
+            <hr>
+            
+            <div class="button-wrap">
+                <h3>39 899 грн</h3>
+                <a href="{% url 'shopping' %}" class="button">Додати в корзину</a>
+            </div>
+        </div>
+                
+        <div class="card">
+            <p>
+                <img src="{% static 'product_page/img/macbook_pro16.jpg.webp' %}" alt="">
+            </p>
+            <h3>MacBook Pro 16 512GB</h3>\
+            <hr>
+            
+            <div class="button-wrap">
+                <h3>94 999 грн</h3>
+                <a href="{% url 'shopping' %}" class="button">Додати в корзину</a>
+            </div>
+        </div>
+                
+        <div class="card">
+            <p>
+                <img src="{% static 'product_page/img/macbook_pro13.jpg.webp' %}" alt="">
+            </p>
+            <h3>MacBook Pro 13 256GB</h3>\
+            <hr>
+            
+            <div class="button-wrap">
+                <h3>53 599 грн</h3>
+                <a href="{% url 'shopping' %}" class="button">Додати в корзину</a>
+            </div>
+        </div>
+                
+        <div class="card">
+            <p>
+                <img src="{% static 'product_page/img/macmini.jpg.webp' %}" alt="">
+            </p>
+            <h3>Apple Mac Mini 256GB</h3>
+            <br>
+            <hr>
+            
+            <div class="button-wrap">
+                <h3>24 792 грн</h3>
+                <a href="{% url 'shopping' %}" class="button">Додати в корзину</a>
+            </div>
+        </div>
+                
+        <div class="card">
+            <p>
+                <img src="{% static 'product_page/img/macbook_air15.jpg.webp' %}" alt="">
+            </p>
+            <h3>MacBook Air 15 1TB</h3>\
+            <hr>
+            
+            <div class="button-wrap">
+                <h3>86 141 грн</h3>
+                <a href="{% url 'shopping' %}" class="button">Додати в корзину</a>
+            </div>
+        </div>
+                
+        <div class="card">
+            <p>
+                <img src="{% static 'product_page/img/imac24.jpg.webp' %}" alt="">
+            </p>
+            <h3>Apple IMac 24 512GB</h3>\
+            <hr>
+            
+            <div class="button-wrap">
+                <h3>106 158 грн</h3>
+                <a href="{% url 'shopping' %}" class="button">Додати в корзину</a>
+            </div>
+        </div>
+    </div>
+    
 {% endblock %}

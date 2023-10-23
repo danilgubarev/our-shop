@@ -1,27 +1,58 @@
-.product_page{
+.button-wrap {
     display: flex;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    justify-content:center;
+    height: 7%;
+}
+.button {
+    background: red;
+    padding: 4px;
+    color: white;
+    border-radius: 5px;
+    font-size: 20px;
+    position: relative;
+    top: 17px;
+    left: 10px
+    
 }
 
-/* #last { */
-    /* position: absolute; */
-    /* bottom: 1px; */
-    /* left: 10px; */
-    /* width: 450px */
-    
-/* } */
+.button:hover {
+    background: rgb(255, 94, 0);
+}
 
-.product {
-    margin-top: 50px;
-    background-color: #141414;
-    width: 300px;
-    border: 8px;
-    border-radius: 15px;
-    /* display: inline-block; */
-    margin-right: 25px;
-    /* display: flex; */
-    flex-grow: 1;
-    /* justify-content: center; */
+.card-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px; /* Пространство между карточками */
+}
+
+.card {
+    width: calc(16.6667% - 20px); /* Чтобы каждая карточка занимала 25% ширины с отступом */
+    background: #303030;
+    border: 1px solid #ddd;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-bottom: 50px;
+    
+}
+
+.card img {
+    width: 100%; /* Растянуть изображение на всю ширину карточки */
+    text-align: center; /* Чтобы изображение было по центру карточки */
+}
+
+
+
+hr {
+    margin: 0;
+}
+
+h2 {
     text-align: center;
+    font-size: 30px;
+    margin-bottom: 40px;
+    margin-top: 50px;
 }
 
 h2 {

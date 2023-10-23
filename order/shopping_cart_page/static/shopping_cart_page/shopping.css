@@ -1,0 +1,16 @@
+div{
+    text-align: center;
+    transform: background-color,color,border 3s;
+}
+
+div a{
+    background-color: orange;
+    color: white;
+    font-size: 25px;
+    border-radius: 3px;
+    height: 40px;
+}
+
+div a:hover{
+    background-color:#00d9ff ;
+}

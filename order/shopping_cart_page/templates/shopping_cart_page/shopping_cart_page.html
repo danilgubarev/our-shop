@@ -2,10 +2,23 @@
 {% load static %}
 
 {% block links %}
-
+    <link rel="stylesheet" href="{% static 'product_page/product_page.css'%}">    
+    <link rel="stylesheet" href="{% static 'shopping_cart_page/shopping.css'%}">
 {% endblock %}
 
 
 {% block content %}
     <h1>Корзина</h1>
+    <div class="card">
+            
+        <p>
+            <img src="{% static 'product_page/img/iphone15promax.jpg.webp' %}" alt="">
+        </p>
+        <h3>Iphone 15 Pro Max</h3>\
+        <hr>
+        <h3>67 194 грн</h3>
+    </div>
+    <div >
+        <a href="#">Оформити замовлення</a>
+    </div>
 {% endblock %}

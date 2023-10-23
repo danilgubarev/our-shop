@@ -20,7 +20,7 @@ from contact_page.views import contact_page
 from main_page.views import main_page
 from product_page.views import product_page
 from shopping_cart_page.views import shopping_cart_page
-
+from django.urls import path, include
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('registration', views.registration_page, name='registration'),
@@ -28,7 +28,8 @@ urlpatterns = [
     path('', main_page, name='main'),
     path('contact_page/', contact_page, name='contact'),
     path('product_page/', product_page, name='product'),
-    path('shopping_cart_page/', shopping_cart_page, name='shopping')
+    path('shopping_cart_page/', shopping_cart_page, name='shopping'),
+    path('accounts', include('django.contrib.auth.urls'))
 
 
 ]
