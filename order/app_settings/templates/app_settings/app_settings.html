@@ -14,14 +14,15 @@
 <body>
     <header>
         <nav id="header">
-        {% if user.is_authenticated %}
+            {% if user.is_authenticated %}
             <a href="{% url 'logout' %}" class="authorize">Logout</a>
-        {% else %}
-            <a href="{% url 'login' %}" class="authorize">Login</a>
-        {% endif %}
+            {% else %}
+            <a href="{% url 'authorization' %}" class="authorize">Login</a>
+            <a href="{% url 'registration' %}" class="authorize">Registration</a>
+            {% endif %}
             <a href="{% url 'main' %}" class='link'>Головна сторiнка</a>
             <a href="{% url 'contact' %}" class='link'>Контакти</a>
-            <a href="{% url 'shopping' %}" id="basket"><img src="{% static 'app_settings/img/basket.png' %}" width="60px" height="60px" alt=""></a>
+            <a href="{% url 'shopping' %}" class="basket"><img src="{% static 'app_settings/img/basket.png' %}" width="60px" height="60px" alt=""></a>
             <a href="{% url 'product' %}" class='link'>Товари</a>
             <a href="{% url 'main' %}" id="logo"><img src="{% static 'app_settings/img/logo2.png' %}" width="60px" height="60px" alt=""></a>
             

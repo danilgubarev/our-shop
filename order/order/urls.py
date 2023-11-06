@@ -23,14 +23,13 @@ from shopping_cart_page.views import shopping_cart_page
 from django.urls import path, include
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('registration', views.registration_page, name='registration'),
-    path('authorization/', views.authorization_page, name='authorization'),
+    path('registration/', views.register, name='registration'),
+    path('authorization/', views.view_login, name='authorization'),
     path('', main_page, name='main'),
+    path('logout/', views.user_logout, name='logout'),
     path('contact_page/', contact_page, name='contact'),
     path('product_page/', product_page, name='product'),
     path('shopping_cart_page/', shopping_cart_page, name='shopping'),
-    path('accounts', include('django.contrib.auth.urls')),
-    path('users', include('users.urls'))
 
 
 ]

@@ -62,7 +62,7 @@ h1 {
 
 }
 
-#basket {
+.basket {
     position: absolute;
     right: 20px;
     top: 10px;
